@@ -2,15 +2,65 @@
 
 }
 
+nav {
+    display: flex;
+    background-color: #d8a47f;
+  }
+  
+
+nav a {
+    color: #13293d;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+  
+}
+
 body {
     background-color: rgb(0, 230, 180);
 }
 
 aside {
-    
+    float: right;
+
 }
 
 .about-me {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
     background-color: aliceblue;
+}
+.about-me h1 h2 {
+    text-decoration:dashed
+}
+
+.about-me img{
+    width: auto;
+    border: #13293d dotted 2px;
+    
+}
+
+.about-me p {
+    color: rgb(18, 202, 91);
+}
+
+.projects {
+    display: flex;
+    width: 500px;
+    height: auto;
+    background-color: chocolate;
+}
+
+.card  {
+    display: flex;
+    width: 250px;
+    height: 250px;
+    text-decoration: none;
+    margin: 3 3 3 3;
+    padding: 2%;
+    background-color: #13293d;
+    
 }
 
