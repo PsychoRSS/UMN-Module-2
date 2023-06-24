@@ -17,12 +17,16 @@ nav a {
 }
 
 body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
     background-color: rgb(0, 230, 180);
 }
 
 
 .about-me {
-    padding: 0 0 0 15;
+    padding: 0 0 0 15px;
     margin: 10px 0px 20px 1px;
     width: auto;
     height: auto;
@@ -43,18 +47,27 @@ body {
     
 }
 
-#this {
-    display: flex;
-    position: relative;
+.toppings{
+    
 }
+
+#this {
+    position: absolute;
+    bottom: -45rem;
+    left: 2.5rem;
+}
+
 #title{
     position: absolute;
-    right: 250px;
-    top:450px
+    left: 5rem;
+    
 }
 
 
 .wrap{
+    margin-right: 0;
+    margin-left: auto;
+    width: 70%;
     padding: 0 0 0 70;
     border-left: solid rgb(63, 121, 18) 5px ;
     float: right;
@@ -62,18 +75,20 @@ body {
     flex-direction: column;
 }
 
+
 .projects {
     display: block;
+    
     width: 850px;
     height: 200px;
-    margin: 20 0 5 0;
+    margin: 20px 0px 5px 0px;
     background-color: chocolate;
     color: rgba(54, 249, 0, 0.721);
 }
 
 .projects:hover { 
     transform: scale(1.2); 
-    }
+}
 
 .projects a {
     width: auto;
@@ -83,21 +98,39 @@ body {
 aside {
     width: auto;
     height: auto;
- display: flex;
- background-color: #13293d;
- 
+    display: flex;
+    background-color: #13293d;
+    justify-content: space-between;
+    padding: 1rem;
 }
+
 aside a {
-    display: flex;
+   
     text-align:end;
     text-decoration: none;
     color: yellow;
-    padding: 100 100 ;
+    /* padding: 20px ; */
 }
+
 aside p {
-    display: flex;
+    
     text-align:end;
     text-decoration: none;
     color: yellow;
-    padding: 100 100 ;
+    padding: 1rem;
 }
+
+
+@media (max-width: 992px){
+    aside p {
+        color:purple
+    }
+    aside{ 
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        width: 100vw;
+    }
+    
+}
+
